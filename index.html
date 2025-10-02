@@ -587,14 +587,15 @@
 
         @media (max-width: 768px) {
           .menu {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 0px;
-            left: 0;
-            width: 100%;
-            background: #333;
-            text-align: center;
+         display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;   /* ✅ 從 header 底下開始 */
+    left: 0;
+    width: 100%;
+    background: #333;
+    text-align: center;
+    z-index: 999; /* 確保不被其他東西蓋掉 */
           }
 
           .menu.active {
