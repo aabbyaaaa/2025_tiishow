@@ -146,8 +146,12 @@
   cursor: default;
 }
 
+.small-banner3{
+    cursor: pointer;
+  
+}
 
-      .small-banner:hover {
+      .small-banner3:hover {
         transform: translateY(-3px);
       }
 
@@ -924,21 +928,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- menu 區塊結束 -->
     <!-- ===== **新增：顶部Banner系统** ===== -->
     <section class="top-banner-section">
-      <div class="top-banner-container">
-        <!-- **大Banner (1440*450)** -->
-        <div class="main-banner">
-          <div class="banner-placeholder">
-          <img
-            src="https://dgs.com.tw/pic/00/01/36/94-2f1debf79f72f363.jpg"
-            class="banner-image"
-            alt="大Banner"
-          />
-          </div>
-        </div>
+     <div class="main-banner">
+  <div class="banner-placeholder">
+    <picture>
+      <!-- 手機版 (≤480px) 使用新圖 -->
+      <source media="(max-width: 480px)" srcset="https://dgs.com.tw/pic/00/01/37/23-05211b4a3bf6e3e5.jpg" />
+      <!-- 預設 (平板/桌機) 使用原圖 -->
+      <img
+        src="https://dgs.com.tw/pic/00/01/36/94-2f1debf79f72f363.jpg"
+        class="banner-image"
+        alt="大Banner"
+      />
+    </picture>
+  </div>
+</div>
 
         <!-- **小Banner容器 (450*200 x2)** -->
         <div class="small-banners-container">
-          <div class="small-banner">
+          <div class="small-banner2 small-banner3">
             <div class="banner-placeholder">
               <img
             src="https://dgs.com.tw/pic/00/01/33/32-3abb1a3210b52c8e.jpg"
