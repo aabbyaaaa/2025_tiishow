@@ -127,25 +127,37 @@
         justify-content: center;
       }
 
-.small-banner,
-.small-banner2 {
-  width: 450px;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-  margin: 20px;
-  cursor: pointer;
-}
-.small-banner2{
-  cursor: default;
-}
+      .small-banner {
+        width: 450px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        cursor: pointer;
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+        margin:20px 
+      }
 
+       .small-banner2 {
+        width: 450px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+    
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+        margin:20px 
+      }
 
       .small-banner:hover {
         transform: translateY(-3px);
@@ -178,33 +190,32 @@
    
 
       /* **响应式设计：平板** */
-@media (max-width: 768px) {
-  .top-banner-container {
-    padding: 0 16px;
-  }
+      @media (max-width: 768px) {
+        .top-banner-container {
+          padding: 0 16px;
+        }
 
-  .main-banner {
-    height: 300px;
-    margin-bottom: 16px;
-  }
+        .main-banner {
+          height: 300px;
+          margin-bottom: 16px;
+        }
 
-  .small-banners-container {
-    flex-direction: column;
-    gap: 6px;
-    align-items: center;
-  }
+        .small-banners-container {
+          flex-direction: column;
+          gap: 16px;
+          align-items: center;
+        }
 
-  .small-banner,
-  .small-banner2 {
-    width: 100%;
-    max-width: 450px;
-    height: 200px;
-  }
-  .banner-placeholder {
-    font-size: 16px;
-  }
-}
+        .small-banner {
+          width: 100%;
+          max-width: 450px;
+          height: 200px;
+        }
 
+        .banner-placeholder {
+          font-size: 16px;
+        }
+      }
 
       /* **响应式设计：手机** */
       @media (max-width: 480px) {
@@ -229,7 +240,7 @@
 
         .banner-placeholder {
           font-size: 14px;
-          padding: 2px;
+          padding: 16px;
         }
       }
 
